@@ -3,6 +3,7 @@ import { BaseModel } from './base.model';
 import { ProductModel } from './product_model';
 
 export interface CartAttributes extends BaseModel {
+    
     cartID:number;
     productID:number;
     amount: number;

@@ -19,6 +19,7 @@ export const LocationEntity = LocationFactory(TableName.location, DBconnection);
 export const OrderDetailEntity = OrderDetailFactory(TableName.orderDetail, DBconnection);
 export const OrderEntity = OrderFactory(TableName.order, DBconnection);
 export const NotificationEntity = NotificationFactory(TableName.notification, DBconnection);
+
 export function initDB(): Promise<Sequelize> {
     return new Promise<Sequelize>(async (resolve, rejects) => {
         try {

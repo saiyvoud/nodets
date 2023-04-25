@@ -4,6 +4,7 @@ import { Service } from '../services/services';
 import { User, UserModel, ChangePassword, LogIn } from 
 '../models/user.model';
 import { UserEntity } from '../models/database.entity';
+
 export class UserConroller {
     public static addUser(req: Request, res: Response) {
         const user = req.body as UserModel;
